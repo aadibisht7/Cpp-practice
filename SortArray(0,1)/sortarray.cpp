@@ -11,7 +11,6 @@ void sort(int arr[], int n){
         while(arr[j] == 1 && i < j){
             j--;
         }
-        
         if(arr[i] == 1 && arr[j] == 0 && i < j){
             swap(arr[i], arr[j]);
             i++;
