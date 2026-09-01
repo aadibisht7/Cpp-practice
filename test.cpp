@@ -1,29 +1,30 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
-void findDuplicate(int array[], int n){
-    int start = 0;
-    while(start < n){
-        for(int end = start + 1; end < n; end++){
-            if(array[start] == array[end]){
-                cout << "Duplicate: " << array[start] << endl;
-            }
-        }
-        start++; 
-    }
-}
 
-void printarr(int array[], int n){
-    
-    for(int i=0; i <n; i++){
-        cout << array[i] << " ";
+int reverse(int real){
+    int x = real;
+    int r = 0;
+    while(x != 0){
+        int digit = x%10;
+        r = r * 10 + digit;
+        x = x/10;
     }
+    return r;
 }
 
 int main(){
-    int arr[7] = {4, 6, 2, 2, 1, 9, 9};
+    int real;
+    cin >> real;
 
-    findDuplicate(arr, 7);
+    int reverseofnum = reverse(real);
+    cout << reverseofnum;
+    if(reverseofnum == real){
+        cout << "true";
+    }
+    else{
+        cout << "false";
+    }
 
-    printarr(arr, 7);
 }
