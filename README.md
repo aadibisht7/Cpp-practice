@@ -21,26 +21,6 @@ This repository is mainly for practicing and strengthening:
 * CodeStudio
 * Other practice problems and exercises
 
-## Structure
-
-The repository contains code from lectures, practice questions, and problems I solve along the way.
-
-```text
-C++/
-│
-├── Basics/
-├── Arrays/
-├── Searching & Sorting/
-├── Strings/
-├── Functions/
-├── Recursion/
-├── OOP/
-├── Data Structures/
-├── LeetCode/
-├── CodeStudio/
-└── Practice/
-```
-
 ## Language
 
 **C++**
